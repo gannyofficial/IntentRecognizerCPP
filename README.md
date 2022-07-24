@@ -78,14 +78,14 @@ The sample output of few speech utterences can be seen below..
 ## Catch2 Test
 The catch2 test case files are located in the folder 'IntentRecognitionCPP/Catch2'. It contains 'catch.hpp' header, 'testMain.cpp' and 'testCase.cpp' test files.  
 
-**TEST CASE: Voice & Intent Recognized** </br>
+**Voice & Intent Recognized** </br>
 
 ![image](https://user-images.githubusercontent.com/77659842/180663894-ec4a93a4-b875-4a0a-973e-9b25ff1f5a65.png)
 
-**TEST CASE: Voice Recognized But No Intent Identified** </br>
+**Voice Recognized But No Intent Identified** </br>
 
 ![image](https://user-images.githubusercontent.com/77659842/180663918-3ed874b8-6322-48bf-9edc-2bb5791cab72.png)
 
-**TEST CASE: Voice Not Recognized** </br>
+**Voice Not Recognized** </br>
 
 ![image](https://user-images.githubusercontent.com/77659842/180663973-4cff6d2c-5ee5-41c4-9378-b90a7677cf39.png)

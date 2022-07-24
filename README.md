@@ -58,16 +58,20 @@ The intent recognizer handles the following sentences with multiple utterences f
 ## Intent Recognizer - Sample Output
 The sample output of few speech utterences can be seen below..
 
-**What is the weather today?** </br>
+**What is the weather today**</br>
+
 ![image](https://user-images.githubusercontent.com/77659842/180663450-a0aa5b11-d049-46f3-81f5-b2c180fb8cd2.png)
 
-**What is the weather in Paris today?** </br>
+**What is the weather in Paris today**</br>
+
 ![image](https://user-images.githubusercontent.com/77659842/180663278-57a14f0a-9e13-4587-b1d2-c54d2a27b218.png)
 
-**What is the weather in Munich today?** </br>
+**What is the weather in Munich today**</br>
+
 ![image](https://user-images.githubusercontent.com/77659842/180663373-b6ac1550-a38c-4973-a7f3-026a39411f77.png)
 
 **Tell me an interesting fact.** </br>
+
 ![image](https://user-images.githubusercontent.com/77659842/180663490-2c5b7041-7152-4c00-8efc-5a31be45eb4f.png)
 
 
@@ -75,12 +79,15 @@ The sample output of few speech utterences can be seen below..
 The catch2 test case files are located in the folder 'IntentRecognitionCPP/Catch2'. It contains 'catch.hpp' header, 'testMain.cpp' and 'testCase.cpp' test files.  
 
 **TEST CASE: Voice & Intent Recognized** </br>
+
 ![image](https://user-images.githubusercontent.com/77659842/180663894-ec4a93a4-b875-4a0a-973e-9b25ff1f5a65.png)
 
 **TEST CASE: Voice Recognized But No Intent Identified** </br>
+
 ![image](https://user-images.githubusercontent.com/77659842/180663918-3ed874b8-6322-48bf-9edc-2bb5791cab72.png)
 
 **TEST CASE: Voice Not Recognized** </br>
+
 ![image](https://user-images.githubusercontent.com/77659842/180663973-4cff6d2c-5ee5-41c4-9378-b90a7677cf39.png)
 
 

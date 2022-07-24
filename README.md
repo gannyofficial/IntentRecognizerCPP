@@ -47,3 +47,21 @@ The intent recognizer handles the following sentences with multiple utterences f
 * How weather in "City Name" today?
 * How weather in "City Name" now?
 </details>
+
+<details> <summary>
+  Tell me an interesting fact.
+  </summary>
+  
+* Say me an interesting fact.
+* Tell me a interesting fact.
+* Say me a interesting fact.
+* Tell me some fact.
+* Say me some fact.
+* Tell some fact.
+* Say some fact
+* Tell a fact.
+* Say a fact.
+</details>
+  
+  
+  

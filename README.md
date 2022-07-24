@@ -64,4 +64,18 @@ The intent recognizer handles the following sentences with multiple utterences f
 </details>
   
   
+## Intetne Recognizer - Sample Output
+The sample output of a few speech utterences can be seen below..
+
+### What is the weather in Paris today? </br>
+![image](https://user-images.githubusercontent.com/77659842/180663278-57a14f0a-9e13-4587-b1d2-c54d2a27b218.png)
+
+### What is the weather in Munich today? </br>
+![image](https://user-images.githubusercontent.com/77659842/180663373-b6ac1550-a38c-4973-a7f3-026a39411f77.png)
+
+
   
+  
+### Catch2 Test
+The intent recognizer handles the following sentences with multiple utterences from the speech, handling different semantic variations like below..
+

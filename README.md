@@ -58,15 +58,15 @@ The intent recognizer handles the following sentences with multiple utterences f
 ## Intent Recognizer - Sample Output
 The sample output of few speech utterences can be seen below..
 
-**What is the weather today**</br>
+**What is the weather today?**</br>
 
 ![image](https://user-images.githubusercontent.com/77659842/180663450-a0aa5b11-d049-46f3-81f5-b2c180fb8cd2.png)
 
-**What is the weather in Paris today**</br>
+**What is the weather in Paris today?**</br>
 
 ![image](https://user-images.githubusercontent.com/77659842/180663278-57a14f0a-9e13-4587-b1d2-c54d2a27b218.png)
 
-**What is the weather in Munich today**</br>
+**What is the weather in Munich today?**</br>
 
 ![image](https://user-images.githubusercontent.com/77659842/180663373-b6ac1550-a38c-4973-a7f3-026a39411f77.png)
 
@@ -89,12 +89,3 @@ The catch2 test case files are located in the folder 'IntentRecognitionCPP/Catch
 **TEST CASE: Voice Not Recognized** </br>
 
 ![image](https://user-images.githubusercontent.com/77659842/180663973-4cff6d2c-5ee5-41c4-9378-b90a7677cf39.png)
-
-
-
-
-
-
-
-
-

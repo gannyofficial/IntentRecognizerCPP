@@ -83,13 +83,14 @@ The sample output of few speech utterences can be seen below..
 The intent 
 
 ### Test Case: VOICE & INTENT RECOGNIZED </br>
-![image](https://user-images.githubusercontent.com/77659842/180663693-a1853972-c0f8-4289-a5b2-0d1ab397e515.png)
+![image](https://user-images.githubusercontent.com/77659842/180663894-ec4a93a4-b875-4a0a-973e-9b25ff1f5a65.png)
 
 ### Test Case: VOICE RECOGNIZED BUT NO INTENT IDENTIFIED </br>x
-![image](https://user-images.githubusercontent.com/77659842/180663802-d83e665f-e2cb-42de-a4b6-41ad11b85cd4.png)
+![image](https://user-images.githubusercontent.com/77659842/180663918-3ed874b8-6322-48bf-9edc-2bb5791cab72.png)
 
 ### Test Case: VOICE NOT RECOGNIZED </br>
-![image](https://user-images.githubusercontent.com/77659842/180663833-d04f4182-3045-4e7f-b60f-fb8dd65b66cb.png)
+![image](https://user-images.githubusercontent.com/77659842/180663973-4cff6d2c-5ee5-41c4-9378-b90a7677cf39.png)
+
 
 
 

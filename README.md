@@ -16,6 +16,7 @@ The intent recognizer handles the following sentences with multiple utterences f
 <details> <summary>
   What is the weather like today?
   </summary>
+  
 * What is the weather like now?
 * How is the weather like today?
 * How is the weather like now?
@@ -32,6 +33,7 @@ The intent recognizer handles the following sentences with multiple utterences f
 <details> <summary>
   What is the weather like in "City Name" today?
   </summary>
+  
 * What is the weather like in "City Name" today?
 * What is the weather like in "City Name" now?
 * How is the weather like in "City Name" today?

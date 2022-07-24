@@ -149,6 +149,8 @@
     <ClInclude Include="test\catch.hpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Catch2\testCase.cpp" />
+    <ClCompile Include="Catch2\testMain.cpp" />
     <ClCompile Include="IntentRecognitionCPP.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

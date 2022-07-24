@@ -19,7 +19,7 @@ auto IntentRecognitionWithMicrophone()
     intentRecognizer->AddIntent("(What | How) [ is ] [ the ] {city:climate} [ like ] in {city:name} (today | now).", "GetWeatherCity");
     intentRecognizer->AddIntent("Tell [me] [an | a] [interesting | some] {fact}", "GetFact");
 
-    // Add more intents here. Intents within () are mandatory elements in the speech. Intents within [] are optional. 
+    // More intents can be added here. Intents within () are mandatory elements in the speech. Intents within [] are optional. 
   
     std::cout << "Say something for the intent recognition..." << std::endl;
     auto intent = intentRecognizer->RecognizeOnceAsync().get();

@@ -23,6 +23,12 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Catch2\testCase.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Catch2\testMain.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
     <ClCompile Include="IntentRecognitionCPP.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>

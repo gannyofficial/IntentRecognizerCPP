@@ -18,7 +18,7 @@ auto testIntent()
     
     intentRecognizer->AddIntent("(What | How) [ is ] [ the ] {climate} [like] (today | now).", "GetWeather");
     intentRecognizer->AddIntent("(What | How) [ is ] [ the ] {city:climate} [ like ] in {city:name} (today | now).", "GetWeatherCity");
-    intentRecognizer->AddIntent("Tell [me] [an | a] [interesting | some] {fact}", "GetFact");
+    intentRecognizer->AddIntent("(Tell | Say) [me] [an | a] [interesting | some] {fact}", "GetFact");
 
     std::cout << "Say something for the intent recognition..." << std::endl;
     auto intent = intentRecognizer->RecognizeOnceAsync().get();

@@ -15,7 +15,7 @@ auto testIntent()
     auto audioConfig = AudioConfig::FromDefaultMicrophoneInput();
     auto config = SpeechConfig::FromSubscription("8f22cb7c3f0e40f2ad26080eae122317", "westeurope");
     auto intentRecognizer = IntentRecognizer::FromConfig(config, audioConfig);
-    
+
     intentRecognizer->AddIntent("(What | How) [ is ] [ the ] {climate} [like] (today | now).", "GetWeather");
     intentRecognizer->AddIntent("(What | How) [ is ] [ the ] {city:climate} [ like ] in {city:name} (today | now).", "GetWeatherCity");
     intentRecognizer->AddIntent("(Tell | Say) [me] [an | a] [interesting | some] {fact}", "GetFact");
@@ -71,7 +71,7 @@ auto testIntent()
             break;
         case NoMatchReason::InitialBabbleTimeout:
             std::cout << "NOMATCH: NOISY AUDIO STREAM. SERVICE TIME OUT!" << std::endl;
-        std::cout << "The audio stream contains only noise, and the service timed out waiting for the speech." << std::endl;
+            std::cout << "The audio stream contains only noise, and the service timed out waiting for the speech." << std::endl;
             break;
         case NoMatchReason::KeywordNotRecognized:
             std::cout << "NOMATCH: Keyword UNRECOGNIZED!" << std::endl;
@@ -81,25 +81,51 @@ auto testIntent()
         break;
     }
     default:
-        return "TEST FAILED";
+        return "NO CONNECTION";
         break;
     }
 }
 
-TEST_CASE("TEST INTENT", "[intent]") 
-{    
-    auto testResult = testIntent();
+TEST_CASE("TEST INTENT", "[intent]")
+{
+    auto testClear = false;
+    auto feedBack = testIntent();
 
-    if (testResult == "RECOGNIZED INTENT")
+    if (feedBack == "RECOGNIZED INTENT")
     {
-        REQUIRE(testResult == "RECOGNIZED INTENT");
+        testClear = true;
     }
-    else if (testResult == "RECOGNIZED SPEECH")
+    else if (feedBack == "RECOGNIZED SPEECH")
     {
-        REQUIRE(testResult == "RECOGNIZED SPEECH");
+        testClear = true;
     }
-    else if (testResult == "UNRECOGNIZED SPEECH")
+    else if (feedBack == "UNRECOGNIZED SPEECH")
     {
-        REQUIRE(testResult == "UNRECOGNIZED SPEECH");
+        testClear = true;
+    }
+    else
+    {
+        testClear = false;
+    }
+
+    // The test case will pass if an intent has been recognized or voice has been identified or if the voice couldnt be recognized due to silence or noise. 
+    // The test case is designed to fail in the event of conenction not being established with the Cognitive Speech Service.
+
+    if (testClear == true && feedBack == "RECOGNIZED INTENT")
+    {
+        REQUIRE(feedBack == "RECOGNIZED INTENT");
+    }
+    else if (testClear == true && feedBack == "RECOGNIZED SPEECH")
+    {
+        REQUIRE(feedBack == "RECOGNIZED SPEECH");
+    }
+    else if (testClear == true && feedBack == "UNRECOGNIZED SPEECH")
+    {
+        REQUIRE(feedBack == "UNRECOGNIZED SPEECH");
+    }
+    else
+    {
+        std::cout << "Connection is not established with the Cognitive Speech Service. Unable to complete the test!" << std::endl;
+        REQUIRE(feedBack != "NO CONNECTION");
     }
 }

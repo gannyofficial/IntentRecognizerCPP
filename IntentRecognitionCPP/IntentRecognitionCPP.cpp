@@ -2,7 +2,6 @@
 #include <speechapi_cxx.h>
 #include <speechapi_cxx_enums.h>
 
-using namespace std;
 using namespace Microsoft::CognitiveServices::Speech;
 using namespace Microsoft::CognitiveServices::Speech::Audio;
 using namespace Microsoft::CognitiveServices::Speech::Intent;
@@ -102,7 +101,7 @@ int main()
     {
         IntentRecognitionWithMicrophone();
     }
-    catch (exception e)
+    catch (std::exception e)
     {
         std::cout << "Exception: " << e.what() << std::endl;
     }

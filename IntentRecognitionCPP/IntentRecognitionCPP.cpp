@@ -1,6 +1,5 @@
 #include <iostream>
 #include <speechapi_cxx.h>
-#include <speechapi_cxx_enums.h>
 
 using namespace Microsoft::CognitiveServices::Speech;
 using namespace Microsoft::CognitiveServices::Speech::Audio;
